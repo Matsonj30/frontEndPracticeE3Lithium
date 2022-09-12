@@ -1,6 +1,19 @@
 :root{
-
+    --grey: #4d4d4f;
 }
-h1{
-    color: red
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    height: 35px;
+    background-color: var(--grey);
+    text-decoration: none;  
+    justify-content: center; 
+    
+    ul{
+       list-style: none; 
+       display: flex;
+    }
 }
