@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  height: 36px;
+  background-color: #4d4d4f;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+.header #headerSocials {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header li {
+  color: white;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+.header .fa {
+  text-decoration: none;
+  color: white;
+}
+.header .border {
+  border-right: 1px solid white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */

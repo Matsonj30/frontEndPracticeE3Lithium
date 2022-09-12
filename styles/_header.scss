@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    height: 36px;
+    background-color: $grey;
+    text-decoration: none;  
+    justify-content: flex-end; 
+    #headerSocials{
+       padding-right: 40px;
+       padding-left: 40px;
+    }
+    ul{
+       list-style: none; 
+       display: flex;
+       align-items: center;
+       height: 100%;
+    }
+    li{
+        color:white;
+        font-family: $headerFont;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size:17px;
+    }
+    .fa{
+        text-decoration: none;
+        color:white;
+    }
+    .border{
+        border-right: 1px solid white;
+    }
+}
