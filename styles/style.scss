@@ -1,8 +1,12 @@
 $grey: #4d4d4f;
 $headerFont: neue-haas-grotesk-text, sans-serif;
-@import 'topBar.scss';
-@import 'mainMenu.scss';
+@import '_topBar.scss';
+@import '_mainMenu.scss';
 *{
     margin: 0;
     padding: 0;
+}
+.hover :hover{
+    opacity: 80%;
+    transition: ease-in-out 0.25s;
 }

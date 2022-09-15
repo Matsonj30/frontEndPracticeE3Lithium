@@ -1,8 +1,17 @@
-img{
+.backGroundMenu{
     background: url('../images/backgroundHome.jpg');
     width: 100vw;
-    height:38vw;
-}
-.header{
-    height: 400;
+    height:839px;
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+        .companyName{
+
+        }
+    }
 }
