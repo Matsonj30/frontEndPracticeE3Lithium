@@ -1,51 +1,36 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 36px;
   background-color: #4d4d4f;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   width: 100vw;
 }
-
 .header #headerSocials {
   padding-right: 40px;
   padding-left: 40px;
 }
-
 .header ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 100%;
 }
-
 .header li {
   color: white;
   font-family: neue-haas-grotesk-text, sans-serif;
   padding-right: 15px;
   padding-left: 15px;
-  font-size: 17px;
+  font-size: 15px;
 }
-
 .header a {
   text-decoration: none;
   color: white;
 }
-
-.header .border {
+.header .borderRight {
   border-right: 1px solid white;
 }
-
 .header .hover :hover {
   opacity: 80%;
-  -webkit-transition: ease-in-out 0.25s;
   transition: ease-in-out 0.25s;
 }
 
@@ -54,87 +39,79 @@
   background-size: cover;
   height: 800px;
 }
-
 .backGroundMenu a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 19px;
   font-family: neue-haas-grotesk-text, sans-serif;
+  letter-spacing: 0px;
 }
-
 .backGroundMenu .fa {
   color: white;
+  font-size: 20px;
 }
-
 .backGroundMenu .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 20px;
-  padding-left: 70px;
-  padding-right: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  align-items: center;
 }
-
 .backGroundMenu .companyName {
   width: 388px;
   height: 60px;
   margin-right: auto;
 }
-
 .backGroundMenu .companyName img {
   width: 100%;
   height: 100%;
 }
-
 .backGroundMenu .borderHover {
-  padding-right: 30px;
+  padding: 15px 25px;
   display: inline-block;
   position: relative;
 }
-
+.backGroundMenu .borderHover:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
 .backGroundMenu .borderHover:after {
   display: block;
-  content: '';
+  content: "";
   border-bottom: 2px solid #3d7fbc;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  transform: scaleX(0);
+  transition: 250ms ease-in-out;
 }
-
 .backGroundMenu .borderHover:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+  display: block;
 }
-
 .backGroundMenu .dropdown-content {
-  display: none;
+  visibility: visible;
   position: absolute;
+  opacity: 0;
   z-index: 1;
+  background-color: white;
+  transform: translateY(15px) translateX(-80px);
+  padding: 20px 0px;
+  transition: 0.5s ease-in-out;
 }
-
 .backGroundMenu .dropdown-content a {
   display: block;
   text-decoration: none;
-  padding: 12px 16px;
+  padding: 15px 76px;
+  color: black;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  width: 150px;
+  white-space: nowrap;
+  text-align: left;
 }
-
-.backGroundMenu .dropdown-content .borderHover:hover .dropdown-content {
-  display: block;
+.backGroundMenu .dropdown-content .menuHover:hover {
+  opacity: 50%;
+  transition: ease-in-out 0.25s;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
