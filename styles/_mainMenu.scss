@@ -32,21 +32,33 @@
     .borderHover{
         padding-right: 30px;
         display: inline-block;
-        
-      
+        position: relative;
     }
         
     .borderHover:after{
         display: block;
         content: '';
-        border-bottom: 2px solid #4b82b6;
+        border-bottom: 2px solid #3d7fbc;
         transform: scaleX(0);
         transition: transform 250ms ease-in-out;
     }
     .borderHover:hover::after{
         transform: scaleX(1);
-    }
-    .borderHover::after{
         transform-origin: 0% 50%;
     }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+
+        a{
+            display:block;
+            text-decoration: none;
+            padding: 12px 16px
+        }
+        .borderHover:hover .dropdown-content{
+            display: block;
+        } 
+    }
+
 }
