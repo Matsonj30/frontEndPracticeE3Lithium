@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   height: 36px;
@@ -49,6 +54,7 @@
 .backGroundMenu .fa {
   color: white;
   font-size: 20px;
+  padding: 15px 25px;
 }
 .backGroundMenu .menu {
   display: flex;
@@ -111,7 +117,69 @@
   transition: ease-in-out 0.25s;
 }
 
-* {
-  margin: 0;
+.newsSection .fa {
+  -webkit-text-size-adjust: 1px white;
   padding: 0;
+  font-weight: normal;
+}
+.newsSection .news {
+  width: 505px;
+  height: 192px;
+  background-color: #3F87CE;
+  color: white;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  overflow: auto;
+  display: inline-block;
+  margin-top: 165px;
+  margin-left: 70px;
+  overflow: hidden;
+}
+.newsSection .news h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.newsSection .news .readmore {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 18px;
+}
+.newsSection .news .readmore p {
+  font-weight: bold;
+  padding-right: 15px;
+}
+.newsSection .news .circleBorder {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsSection .news .bluebackgroundPad {
+  padding: 35px 45px;
+}
+.newsSection .signUp {
+  display: flex;
+  color: white;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  padding: 50px 70px;
+}
+.newsSection .signUp h1 {
+  font-weight: 100;
+  font-size: 75px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 850px;
+  margin-right: 50px;
+}
+.newsSection .greenBackground {
+  background-color: #8EBC52;
+  max-width: 506px !important;
+  width: 100%;
+  height: 175px;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */
