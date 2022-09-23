@@ -4,22 +4,33 @@
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 36px;
   background-color: #4d4d4f;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100vw;
 }
+
 .header #headerSocials {
   padding-right: 40px;
   padding-left: 40px;
 }
+
 .header ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
+
 .header li {
   color: white;
   font-family: neue-haas-grotesk-text, sans-serif;
@@ -27,15 +38,19 @@
   padding-left: 15px;
   font-size: 15px;
 }
+
 .header a {
   text-decoration: none;
   color: white;
 }
+
 .header .borderRight {
   border-right: 1px solid white;
 }
+
 .header .hover :hover {
   opacity: 80%;
+  -webkit-transition: ease-in-out 0.25s;
   transition: ease-in-out 0.25s;
 }
 
@@ -44,6 +59,7 @@
   background-size: cover;
   height: 800px;
 }
+
 .backGroundMenu a {
   text-decoration: none;
   color: white;
@@ -51,57 +67,79 @@
   font-family: neue-haas-grotesk-text, sans-serif;
   letter-spacing: 0px;
 }
+
 .backGroundMenu .fa {
   color: white;
   font-size: 20px;
   padding: 15px 25px;
 }
+
 .backGroundMenu .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 20px 40px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .backGroundMenu .companyName {
   width: 388px;
   height: 60px;
   margin-right: auto;
 }
+
 .backGroundMenu .companyName img {
   width: 100%;
   height: 100%;
 }
+
 .backGroundMenu .borderHover {
   padding: 15px 25px;
   display: inline-block;
   position: relative;
 }
+
 .backGroundMenu .borderHover:hover .dropdown-content {
   visibility: visible;
   opacity: 1;
 }
+
 .backGroundMenu .borderHover:after {
   display: block;
-  content: "";
+  content: '';
   border-bottom: 2px solid #3d7fbc;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
 }
+
 .backGroundMenu .borderHover:hover::after {
-  transform: scaleX(1);
-  transform-origin: 0% 50%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
   display: block;
 }
+
 .backGroundMenu .dropdown-content {
   visibility: visible;
   position: absolute;
   opacity: 0;
   z-index: 1;
   background-color: white;
-  transform: translateY(15px) translateX(-80px);
+  -webkit-transform: translateY(15px) translateX(-80px);
+          transform: translateY(15px) translateX(-80px);
   padding: 20px 0px;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
+
 .backGroundMenu .dropdown-content a {
   display: block;
   text-decoration: none;
@@ -112,8 +150,10 @@
   white-space: nowrap;
   text-align: left;
 }
+
 .backGroundMenu .dropdown-content .menuHover:hover {
   opacity: 50%;
+  -webkit-transition: ease-in-out 0.25s;
   transition: ease-in-out 0.25s;
 }
 
@@ -122,6 +162,7 @@
   padding: 0;
   font-weight: normal;
 }
+
 .newsSection .news {
   width: 505px;
   height: 192px;
@@ -135,26 +176,33 @@
   overflow: hidden;
   opacity: 90%;
 }
+
 .newsSection .news h2 {
   font-size: 24px;
   font-weight: 700;
   margin-top: 10px;
 }
+
 .newsSection .news .bluebackgroundPad {
   padding: 35px 45px;
 }
+
 .newsSection .signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: white;
   font-family: neue-haas-grotesk-text, sans-serif;
   padding: 50px 70px;
 }
+
 .newsSection .signUp h1 {
   font-weight: 100;
   font-size: 75px;
   max-width: 850px;
   margin-right: 50px;
 }
+
 .newsSection .greenBackground {
   padding: 40px 50px;
   background-color: #8EBC52;
@@ -166,11 +214,16 @@
 }
 
 .readmore-signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
   font-size: 18px;
 }
+
 .readmore-signup p {
   font-weight: bold;
   padding-right: 15px;
@@ -181,12 +234,20 @@
   border-radius: 50%;
   width: 35px;
   height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   stroke-dasharray: 116.239;
-  transform-origin: center center;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
 }
+
 .circleBorder :hover {
   -webkit-animation: spin 1s;
           animation: spin 1s;
@@ -194,18 +255,23 @@
 
 @-webkit-keyframes spin {
   25% {
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
   25% {
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
