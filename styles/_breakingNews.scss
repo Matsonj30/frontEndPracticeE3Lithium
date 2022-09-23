@@ -17,30 +17,13 @@
         margin-top: 165px;
         margin-left: 70px;
         overflow: hidden;
+        opacity: 90%;
         h2{
             font-size: 24px;
             font-weight: 700;
             margin-top: 10px;
         }
-        .readmore{
-            display: flex;
-            align-items: center;
-            padding-top: 20px;
-            font-size: 18px;
-            p{
-                font-weight: bold;
-                padding-right: 15px;
-            }
-        }
-        .circleBorder{
-            border: 1px solid white;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        
         .bluebackgroundPad{
             padding: 35px 45px;
         }
@@ -53,16 +36,51 @@
         h1{
             font-weight: 100;
             font-size: 75px;
-            width: fit-content;
             max-width: 850px;
             margin-right: 50px;
         }
     }
     .greenBackground{
+        padding: 40px 50px;
         background-color: #8EBC52;
-        max-width: 506px !important;
+        max-width: 400px !important;
         width: 100%;
-        height: 175px;
+        height: 80px;
         margin-top: 10px;
+        opacity: 90%;
+    }
+}
+.readmore-signup{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 18px;
+   
+    p{
+        font-weight: bold;
+        padding-right: 15px;
+    }
+}
+.circleBorder{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke-dasharray: 116.239;
+    transform-origin: center center;
+    
+    :hover{
+        animation: spin 1s;
+    }
+}
+@keyframes spin{
+    25%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
