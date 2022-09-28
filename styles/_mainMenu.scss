@@ -80,3 +80,15 @@
     }
     }
 }
+.scrolled{
+        position: sticky;
+        top: 35px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 40px;
+        align-items: center;
+        background: white;
+        a{
+            color: black;
+        }
+}
